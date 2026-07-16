@@ -1,0 +1,9 @@
+transformers
+datasets
+peft
+accelerate
+evaluate
+sacrebleu
+rouge-score
+bert-score
+torch
