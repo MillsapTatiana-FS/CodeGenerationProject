@@ -17,6 +17,22 @@ def save_results(results, filename="experiment_results.json"):
     print(f"Saved results to {file_path}")
 
 
+def save_generations(docstring, zero, few, cot):
+    gen_path = Path("results/generations")
+    gen_path.mkdir(parents=True, exist_ok=True)
+
+    filename = docstring[:40].replace(" ", "_") + ".json"
+    file_path = gen_path / filename
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump({
+            "docstring": docstring,
+            "zero_shot": zero,
+            "few_shot": few,
+            "cot": cot
+        }, f, indent=4)
+
+
 FEW_SHOT_TEMPLATE = """
 Below are examples of Python functions created from docstrings.
 
@@ -43,6 +59,7 @@ Docstring: "{docstring}"
 Function:
 """
 
+
 def run_all_experiments():
     pairs = load_code_pairs()
     gen = load_model()
@@ -68,6 +85,10 @@ def run_all_experiments():
         generated_cot = generate_code(gen, cot_prompt)
         metrics_cot = evaluate(generated_cot, expected)
 
+        # Save generations
+        save_generations(doc, generated_zero, generated_few, generated_cot)
+
+        # Save metrics
         result_entry = {
             "docstring": doc,
             "zero_shot": metrics_zero,
