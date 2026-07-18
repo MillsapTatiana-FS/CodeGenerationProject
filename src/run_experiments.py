@@ -61,14 +61,21 @@ Function:
 
 
 def run_all_experiments():
-    pairs = load_code_pairs()
-    gen = load_model()
+    print("run_all_experiments() started")
 
+    pairs = load_code_pairs()
+    print("Loaded pairs:", len(pairs))
+    
+    gen = load_model()
+    print("Model loaded")
+    
     results = []
 
     for item in pairs:
         doc = item["docstring"]
         expected = item["expected"]
+        
+        print("Starting:", doc) 
 
         # Zero-shot
         zero_shot_prompt = doc
@@ -85,6 +92,12 @@ def run_all_experiments():
         generated_cot = generate_code(gen, cot_prompt)
         metrics_cot = evaluate(generated_cot, expected)
 
+        # Debug prints 
+        print("\nProcessing:", doc)
+        print("Zero-shot metrics:", metrics_zero)
+        print("Few-shot metrics:", metrics_few)
+        print("CoT metrics:", metrics_cot)
+        
         # Save generations
         save_generations(doc, generated_zero, generated_few, generated_cot)
 
