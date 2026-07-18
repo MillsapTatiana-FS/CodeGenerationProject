@@ -2,6 +2,20 @@ from src.data import load_code_pairs
 from src.model import load_model
 from src.inference import generate_code
 from src.eval import evaluate
+import json
+from pathlib import Path
+
+def save_results(results, filename="experiment_results.json"):
+    metrics_path = Path("results/metrics")
+    metrics_path.mkdir(parents=True, exist_ok=True)
+
+    file_path = metrics_path / filename
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=4)
+
+    print(f"Saved results to {file_path}")
+
 
 FEW_SHOT_TEMPLATE = """
 Below are examples of Python functions created from docstrings.
@@ -61,9 +75,9 @@ def run_all_experiments():
             "cot": metrics_cot,
         }
 
-        print(result_entry)
         results.append(result_entry)
 
+    save_results(results)
     return results
 
 
