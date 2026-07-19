@@ -1,0 +1,6 @@
+{
+    "docstring": "Write a function that returns the absolute value of a number.",
+    "zero_shot": "```python\ndef abs(num):\n    return num if num >= 0 else -num\n```\n\nOr using the built-in `abs()` function:\n\n```python\ndef my_abs(num):\n    return abs(num)\n```",
+    "few_shot": "def abs_value(num):\n    return abs(num)",
+    "cot": "Step 1: Define a function called `abs_value` that takes one argument `num`.\nStep 2: Use the built-in `abs()` function to get the absolute value of the number.\nStep 3: Return the result.\n\n```python\ndef abs_value(num):\n    return abs(num)\n```"
+}

@@ -1,0 +1,6 @@
+{
+    "docstring": "Write a function that calculates the sum of a list of numbers.",
+    "zero_shot": "```python\ndef sum_list(numbers):\n    return sum(numbers)\n```",
+    "few_shot": "def sum_list(numbers):\n    total = 0\n    for num in numbers:\n        total += num\n    return total",
+    "cot": "Step 1: Create a function called `sum_list` that takes a list as an argument.\n\nStep 2: Initialize a variable called `total` with a value of 0.\n\nStep 3: Use a for loop to iterate through each number in the list.\n\nStep 4: In each iteration, add the current number to the `total` variable.\n\nStep 5: After the loop finishes, return the `total` variable.\n\nHere's the final Python function:\n\n```python\ndef"
+}

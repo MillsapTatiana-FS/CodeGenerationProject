@@ -1,0 +1,6 @@
+{
+    "docstring": "Write a function that removes duplicates from a list.",
+    "zero_shot": "```python\ndef remove_duplicates(input_list):\n    return list(set(input_list))\n```",
+    "few_shot": "----------------------------------------------\n\ndef remove_duplicates(lst):\n    return list(set(lst))",
+    "cot": "1. Create an empty list to store unique elements.\n2. Iterate through the input list.\n3. For each element, check if it is already in the empty list.\n4. If it is not, add it to the empty list.\n5. Return the empty list.\n\n```python\ndef remove_duplicates(input_list):\n    unique_list = []\n    for element in input_list:\n        if element not in unique_list:\n            unique_list.append(element)\n    return unique"
+}

@@ -74,21 +74,21 @@ def run_all_experiments():
     for item in pairs:
         doc = item["docstring"]
         expected = item["expected"]
-        
-        print("Starting:", doc) 
+
+        print("Starting:", doc)
 
         # Zero-shot
-        zero_shot_prompt = doc
+        zero_shot_prompt = f"{doc}\n\nProvide ONLY Python code. No explanations."
         generated_zero = generate_code(gen, zero_shot_prompt)
         metrics_zero = evaluate(generated_zero, expected)
 
         # Few-shot
-        few_shot_prompt = FEW_SHOT_TEMPLATE.format(docstring=doc)
+        few_shot_prompt = FEW_SHOT_TEMPLATE.format(docstring=doc) + "\nProvide ONLY Python code. No explanations."
         generated_few = generate_code(gen, few_shot_prompt)
         metrics_few = evaluate(generated_few, expected)
 
         # Chain-of-thought
-        cot_prompt = f"{doc}\n\nThink step by step about the logic needed, then provide the final function."
+        cot_prompt = f"{doc}\n\nThink step by step, then provide ONLY the final Python function."
         generated_cot = generate_code(gen, cot_prompt)
         metrics_cot = evaluate(generated_cot, expected)
 
@@ -97,7 +97,7 @@ def run_all_experiments():
         print("Zero-shot metrics:", metrics_zero)
         print("Few-shot metrics:", metrics_few)
         print("CoT metrics:", metrics_cot)
-        
+
         # Save generations
         save_generations(doc, generated_zero, generated_few, generated_cot)
 
@@ -113,6 +113,7 @@ def run_all_experiments():
 
     save_results(results)
     return results
+
 
 
 if __name__ == "__main__":

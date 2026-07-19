@@ -1,0 +1,6 @@
+{
+    "docstring": "Write a function that multiplies each element in a list by a given number.",
+    "zero_shot": "```python\ndef mult_list(numbers, multiplier):\n    return [num * multiplier for num in numbers]\n```",
+    "few_shot": "def multiply_list_elements(num, lst):\n    # Your code here\n    pass",
+    "cot": "```python\ndef multiply_list(numbers, multiplier):\n    \"\"\"\n    Multiplies each number in the list by the given multiplier.\n\n    :param numbers: list\n    :param multiplier: int or float\n    :return: list\n    \"\"\"\n    return [num * multiplier for num in numbers]\n```"
+}

@@ -1,0 +1,6 @@
+{
+    "docstring": "Write a function that returns a dictionary mapping each number in a list to its square.",
+    "zero_shot": "```python\ndef square_dict(numbers):\n    return {num: num**2 for num in numbers}\n```",
+    "few_shot": "def square_dict(numbers):\n    # Your code here\n    pass",
+    "cot": "1. Create an empty dictionary.\n2. Iterate through each number in the list.\n3. For each number, calculate its square.\n4. Add a key-value pair to the dictionary with the number as the key and its square as the value.\n5. Return the dictionary.\n\n```python\ndef square_dict(numbers):\n    result = {}\n    for number in numbers:\n        result[number] = number ** 2\n    return result\n```"
+}

@@ -1,0 +1,6 @@
+{
+    "docstring": "Write a function that counts the number of occurrences of an element in a list.",
+    "zero_shot": "```python\ndef count_occurrences(lst, elem):\n    return len(list(filter(lambda x: x == elem, lst)))\n```",
+    "few_shot": "def count_occurrences(element, lst):\n    return lst.count(element)",
+    "cot": "```python\ndef count_occurrences(element, my_list):\n    \"\"\"\n    :param element: the element to count occurrences of\n    :param my_list: the list to search in\n    :return: the number of occurrences of the element in the list\n    \"\"\"\n    count = 0\n    for i in my_list:\n        if i == element:\n            count += 1\n    return count\n```"
+}

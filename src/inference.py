@@ -1,16 +1,14 @@
 from src.model import load_model
 
 def generate_code(generator, prompt: str) -> str:
-    """
-    Generate Python code from a natural language prompt.
-    """
     output = generator(
         prompt,
-        max_new_tokens=160,
-        temperature=0.7,
-        do_sample=True
+        max_new_tokens=120,      # enough for full functions
+        temperature=0.0,
+        do_sample=False
     )
-    return output[0]["generated_text"]
+    return output[0]["generated_text"].strip()
+
 
 
 if __name__ == "__main__":

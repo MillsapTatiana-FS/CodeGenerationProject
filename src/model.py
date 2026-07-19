@@ -28,8 +28,11 @@ def load_model(model_id: str = "mistralai/Mistral-7B-Instruct-v0.2"):
     generator = pipeline(
         "text-generation",
         model=model,
-        tokenizer=tokenizer
-    )
+        tokenizer=tokenizer,
+        max_length=512,              # override the default 20
+        return_full_text=False,      # prevents prompt repetition
+        clean_up_tokenization_spaces=False
+)
 
     return generator
 

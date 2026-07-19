@@ -1,0 +1,6 @@
+{
+    "docstring": "Write a function that merges two lists.",
+    "zero_shot": "```python\ndef merge_lists(list1, list2):\n    return list1 + list2\n```\n\nOr, using list comprehension:\n\n```python\ndef merge_lists(list1, list2):\n    return [x for x in list1] + [y for y in list2]\n```\n\nOr, using `extend()` method:\n\n```python\ndef merge_lists(list1, list2):\n    list1.extend(list2)\n    return list1",
+    "few_shot": "def merge_lists(list1, list2):\n    return list1 + list2",
+    "cot": "1. Create an empty list to store the merged list.\n2. Use a for loop to iterate through the first list.\n3. For each item in the first list, use an if statement to check if the item is already in the merged list.\n4. If the item is not in the merged list, append it to the merged list.\n5. Use another for loop to iterate through the second list.\n6. For each item in the second list, use an if statement to check if the item is already in the merged list.\n7"
+}

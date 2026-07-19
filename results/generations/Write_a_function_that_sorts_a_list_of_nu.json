@@ -1,0 +1,6 @@
+{
+    "docstring": "Write a function that sorts a list of numbers in ascending order.",
+    "zero_shot": "```python\ndef sort_numbers(numbers):\n    numbers.sort()\n    return numbers\n```",
+    "few_shot": "------------------------------------------------\n\ndef sort_numbers(numbers):\n    numbers.sort()",
+    "cot": "1. Create a function called `sort_numbers` that takes a list as an argument.\n2. Use the built-in `sort()` function to sort the list in ascending order.\n3. Return the sorted list.\n\n```python\ndef sort_numbers(numbers):\n    numbers.sort()\n    return numbers\n```"
+}

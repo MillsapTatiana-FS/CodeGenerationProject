@@ -1,0 +1,320 @@
+[
+    {
+        "docstring": "Write a function that returns the factorial of a number.",
+        "zero_shot": {
+            "function": "factorial",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "few_shot": {
+            "function": "factorial",
+            "passed": 2,
+            "total_tests": 2,
+            "errors": []
+        },
+        "cot": {
+            "function": "factorial",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        }
+    },
+    {
+        "docstring": "Write a function that checks if a number is prime.",
+        "zero_shot": {
+            "function": "is_prime",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "few_shot": {
+            "function": "is_prime",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "cot": {
+            "function": "is_prime",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        }
+    },
+    {
+        "docstring": "Write a function that returns the Fibonacci sequence up to n.",
+        "zero_shot": {
+            "function": "fibonacci",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "few_shot": {
+            "function": "fibonacci",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "cot": {
+            "function": "fibonacci",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        }
+    },
+    {
+        "docstring": "Write a function that multiplies each element in a list by a given number.",
+        "zero_shot": {
+            "function": "multiply_elements",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "few_shot": {
+            "function": "multiply_elements",
+            "passed": 0,
+            "total_tests": 1,
+            "errors": [
+                "Function not found in generated code."
+            ]
+        },
+        "cot": {
+            "function": "multiply_elements",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        }
+    },
+    {
+        "docstring": "Write a function that returns the absolute value of a number.",
+        "zero_shot": {
+            "function": "absolute_value",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "few_shot": {
+            "function": "absolute_value",
+            "passed": 0,
+            "total_tests": 1,
+            "errors": [
+                "Function not found in generated code."
+            ]
+        },
+        "cot": {
+            "function": "absolute_value",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        }
+    },
+    {
+        "docstring": "Write a function that calculates the sum of a list of numbers.",
+        "zero_shot": {
+            "function": "sum_list",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "few_shot": {
+            "function": "sum_list",
+            "passed": 1,
+            "total_tests": 1,
+            "errors": []
+        },
+        "cot": {
+            "function": "sum_list",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        }
+    },
+    {
+        "docstring": "Write a function that counts how many even numbers are in a list.",
+        "zero_shot": {
+            "function": "count_evens",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "few_shot": {
+            "function": "count_evens",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "cot": {
+            "function": "count_evens",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        }
+    },
+    {
+        "docstring": "Write a function that returns a dictionary mapping each number in a list to its square.",
+        "zero_shot": {
+            "function": "square_map",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "few_shot": {
+            "function": "square_map",
+            "passed": 0,
+            "total_tests": 1,
+            "errors": [
+                "Function not found in generated code."
+            ]
+        },
+        "cot": {
+            "function": "square_map",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        }
+    },
+    {
+        "docstring": "Write a function that sorts a list of numbers in ascending order.",
+        "zero_shot": {
+            "function": "sort_list",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "few_shot": {
+            "function": "sort_list",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "cot": {
+            "function": "sort_list",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        }
+    },
+    {
+        "docstring": "Write a function that removes duplicates from a list.",
+        "zero_shot": {
+            "function": "remove_duplicates",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "few_shot": {
+            "function": "remove_duplicates",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "cot": {
+            "function": "remove_duplicates",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        }
+    },
+    {
+        "docstring": "Write a function that counts the number of occurrences of an element in a list.",
+        "zero_shot": {
+            "function": "count_occurrences",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "few_shot": {
+            "function": "count_occurrences",
+            "passed": 0,
+            "total_tests": 1,
+            "errors": [
+                "'int' object has no attribute 'count'"
+            ]
+        },
+        "cot": {
+            "function": "count_occurrences",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        }
+    },
+    {
+        "docstring": "Write a function that merges two lists.",
+        "zero_shot": {
+            "function": "merge_lists",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        },
+        "few_shot": {
+            "function": "merge_lists",
+            "passed": 1,
+            "total_tests": 1,
+            "errors": []
+        },
+        "cot": {
+            "function": "merge_lists",
+            "passed": 0,
+            "total_tests": 0,
+            "errors": [
+                "Generated code failed to execute."
+            ]
+        }
+    }
+]

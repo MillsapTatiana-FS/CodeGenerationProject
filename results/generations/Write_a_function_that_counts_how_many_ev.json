@@ -1,0 +1,6 @@
+{
+    "docstring": "Write a function that counts how many even numbers are in a list.",
+    "zero_shot": "```python\ndef count_evens(numbers):\n    return len([num for num in numbers if num % 2 == 0])\n```",
+    "few_shot": "--------------------------------------------------\n\ndef count_evens(numbers):\n    return len([num for num in numbers if num % 2 == 0])",
+    "cot": "```python\ndef count_evens(numbers):\n    \"\"\"\n    Counts the number of even numbers in a list.\n\n    :param numbers: list of numbers\n    :return: int, the number of even numbers in the list\n    \"\"\"\n    return sum(1 for num in numbers if num % 2 == 0)\n```"
+}
